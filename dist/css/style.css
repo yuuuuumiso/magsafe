@@ -194,6 +194,7 @@ html {
 	color: #676767;
 	font-family: "Zen Maru Gothic", serif, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
 	letter-spacing: 0.1em;
+	font-weight: 500;
 	-webkit-font-feature-settings: "palt";
 	font-feature-settings: "palt";
 	text-spacing-trim: space-first;

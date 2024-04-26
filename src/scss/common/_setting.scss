@@ -6,6 +6,7 @@ line-height: 1.6;
 color: $color-font;
 font-family: "Zen Maru Gothic", serif, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;//「-apple-system(safari), BlinkMacSystemFont(chrome)」はフォント名ではない。macでOSシステムフォント(San Franciscoは単体で記述しても表示されない)を指定するための記述。この後にフォント名を書く必要がある
 letter-spacing: 0.1em;
+font-weight: 500;
 font-feature-settings:"palt"; //自動カーニング。「文字詰め」を有効
 text-spacing-trim:space-first;//句読点や括弧等の約物のスペース「アキ」を削る
 font-size: 62.5%;/*デフォルト10px*/
