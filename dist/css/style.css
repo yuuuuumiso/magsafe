@@ -1,0 +1,430 @@
+/*
+ * htmlのfont-size用
+ */
+
+/*
+ * font-size可変用
+ */
+
+/* -------------------------------------------------
+anime
+---------------------------------------------------- */
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+nav ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	text-decoration: none;
+}
+
+/* change colours to suit your needs */
+
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+
+/* change colours to suit your needs */
+
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+input,
+select {
+	vertical-align: middle;
+}
+
+ul li,
+ol li {
+	list-style-type: none; /*リストマーカー無しにする*/
+}
+
+html {
+	line-height: 1.6;
+	color: #676767;
+	font-family: "Zen Maru Gothic", serif, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+	letter-spacing: 0.1em;
+	-webkit-font-feature-settings: "palt";
+	font-feature-settings: "palt";
+	text-spacing-trim: space-first;
+	font-size: 62.5%; /*デフォルト10px*/
+	-webkit-tap-highlight-color: transparent; /* リンクがタップされている間の強調をなくす */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	min-width: 320px;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+:target {
+	scroll-margin-top: 3rem;
+}
+
+::-moz-selection {
+	background: #acacac;
+}
+
+::selection {
+	background: #acacac;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	image-rendering: crisp-edges;
+	display: block;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+
+.c-sec {
+	padding-block: 50px;
+}
+
+.c-sec__inner {
+	max-width: 1200px;
+	margin-inline: auto;
+	padding-inline: 30px;
+}
+
+.c-ttl01 {
+	position: relative;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	padding: 0rem 1rem;
+	border-bottom: 2px solid #a8a8a8;
+	background-color: #ffffff;
+	font-size: 3rem;
+	margin: 0 auto 7rem;
+	text-align: center;
+}
+
+.c-ttl01 span {
+	font-size: 1.5em;
+}
+
+.c-ttl01:before {
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 10%;
+	width: 15px;
+	height: 15px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	rotate: 135deg;
+	translate: -27%;
+}
+
+.c-ttl01:after {
+	content: "";
+	position: absolute;
+	top: calc(100% + 5px);
+	left: calc(10% - 0px);
+	z-index: -1;
+	width: 30px;
+	height: 2px;
+	-webkit-transform: rotate(50deg);
+	transform: rotate(50deg);
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #a8a8a8;
+	-webkit-box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+	box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff; /* 背景色と同じ色を指定 */
+}
+
+.p-mv {
+	background: #e1fffa;
+}
+
+.p-mv__inner {
+	max-width: 1000px;
+	margin-inline: auto;
+}
+
+.reasonLists {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: (1fr)[3];
+	grid-template-columns: repeat(3, 1fr);
+	-ms-grid-rows: 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 20px;
+	justify-items: center;
+}
+
+.reasonLists__item {
+	padding: 30px 30px;
+	width: min(100%, 360px);
+	background: #f4f4f4;
+}
+
+.reasonLists__ttl {
+	font-size: 2rem;
+	text-align: center;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	margin: 0 auto 2rem;
+	position: relative;
+	padding: 0 10px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(70%, #ffeb99));
+	background: linear-gradient(transparent 70%, #ffeb99 70%);
+}
+
+.reasonLists__img {
+	text-align: center;
+	margin: 0 auto 2rem;
+}
+
+.reasonLists__img img {
+	margin-inline: auto;
+}
+
+.reasonLists__txt {
+	font-size: 1.4rem;
+	line-height: 1.8;
+}
+
+.reasonLists__txt span {
+	display: block;
+	font-size: 0.8em;
+}
+
+@media (min-width: 768px) {
+
+.is-sp {
+	display: none !important;
+}
+
+.is-pc {
+	display: block !important;
+}
+
+}
+
+@media (max-width: 768px) {
+
+.is-pc {
+	display: none;
+}
+
+.is-sp {
+	display: block;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+
+html {
+	font-size: 50%;
+}
+
+.c-sec__inner {
+	padding-inline: 15px;
+}
+
+.c-ttl01 {
+	line-height: 1.2;
+	font-size: 5.5vw;
+	padding: 1.5rem 1rem;
+	margin: 0 auto 5rem;
+}
+
+.reasonLists {
+	-ms-grid-columns: 1fr;
+	grid-template-columns: 1fr;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	row-gap: 20px;
+}
+
+.reasonLists__item {
+	width: max(100%, 360px);
+}
+
+.reasonLists__ttl {
+	font-size: 2.2rem;
+}
+
+.reasonLists__img img {
+	width: 100%;
+}
+
+.reasonLists__txt {
+	font-size: 1.6rem;
+}
+
+}
+
+/*# sourceMappingURL=map/style.css.map */

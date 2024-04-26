@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@use './global/mixin';
+@use './global/variable';
+@use './common/anim';
+@use './common/reset';
+@use './common/setting';
+@use './common/layout/l-head';
+@use './common/layout/l-foot';
+@use './common/layout/c-layout';
+@use './common/conponent/c-component';
+@use './pages/mv';
+@use './pages/about';
+@use './pages/body';
+@use './pages/items';
+@use './pages/pick';

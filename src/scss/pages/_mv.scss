@@ -1,0 +1,10 @@
+@use "../global/variable" as *;
+@use "../global/mixin" as *;
+
+.p-mv{
+    background: $color-main;
+    &__inner{
+        max-width: 1000px;
+        margin-inline:auto;
+    }
+}

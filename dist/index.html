@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- ga取り直す -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=yes">
+<title>Premium Style MagSafe特集｜Premium Style Store</title>
+<meta name="description" content="Premium Style MagSafe特集｜株式会社PGA -【楽天市場】Premium Style Store">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<meta property="og:site_name" content="株式会社PGA -【楽天市場】Premium Style Store" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Premium Style MagSafe特集" />
+<meta property="og:description" content="Premium Style MagSafe特集" />
+<meta property="og:url" content="https://www.rakuten.ne.jp/gold/pga-shop/season/magsafe/" />
+<meta property="og:image" content="https://www.rakuten.ne.jp/gold/pga-shop/season/magsafe/img/ogp.jpg" />
+<meta property="og:image:secure_url" content="https://www.rakuten.ne.jp/gold/pga-shop/season/magsafe/img/ogp.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@pga_2017" />
+<meta name="twitter:domain" content="www.pg-a.co.jp" />
+<meta name="twitter:title" content="Premium Style MagSafe特集｜株式会社PGA -【楽天市場】Premium Style Store" />
+<meta name="twitter:description" content="Premium Style MagSafe特集" />
+<meta name="twitter:image" content="https://www.rakuten.ne.jp/gold/pga-shop/season/magsafe/img/ogp.jpg" />
+</head>
+
+<body>
+
+<header class="l-header"></header>
+
+<main class="l-main">
+<section class="p-mv">
+    <div class="p-mv__inner">
+        <picture>
+            <source srcset="./img/mv_sp.jpg" media="(max-width: 768px)" width="100%"><img src="./img/mv_pc.jpg" width="100%">
+          </picture>
+    </div>
+</section>
+
+<section class="c-sec">
+    <div class="c-sec__inner">
+        <h2 class="c-ttl01">MagSafe対応ケースが選ばれる<br class="is-sp"><span>3</span>つの理由</h2>
+        <ul class="reasonLists">
+            <li class="reasonLists__item">
+                <h3 class="reasonLists__ttl">マグネットリング内蔵</h3>
+                <figure class="reasonLists__img"><img src="./img/reason_img01.jpg"></figure>
+                <p class="reasonLists__txt">背面の強力マグネットリングがピタッ」と密着！正確な位置合わせでより効率よく充電可能です。<span>※一部の製品ではマグネットリングを使わない薄型パネルを採用しています。</span></p>
+            </li>
+            <li class="reasonLists__item">
+                <h3 class="reasonLists__ttl">選べるバリエーション</h3>
+                <figure class="reasonLists__img"><img src="./img/reason_img02.jpg"></figure>
+                <p class="reasonLists__txt">手帳型ケース、クリアケース、ガラスケース、シリコンケースなど数多くのバリエーションからお選びいただけます！</p>
+            </li>
+            <li class="reasonLists__item">
+                <h3 class="reasonLists__ttl">幅広い機種に対応</h3>
+                <figure class="reasonLists__img"><img src="./img/reason_img03.jpg"></figure>
+                <p class="reasonLists__txt">最新のiPhone15シリーズはもちろん、iPhone14や13、SEにも対応しています！</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+</main>
+
+
+<footer class="l-footer"></footer>
+
+
+
+<script>
+
+
+//cssキャッシュ
+const cssFiles = [
+  './css/style.css',
+  './css/iframe.css',
+];
+const date_css = '?' + new Date().getTime();
+for (var i = 0; i < cssFiles.length; i++){
+  let css_el = document.createElement("link");
+  css_el.rel = "stylesheet";
+  css_el.type = "text/css";
+  css_el.href = cssFiles[i] + date_css;
+  document.head.appendChild(css_el);
+}
+
+//jsキャッシュ
+const jsFiles = [
+    './js/init.js',
+    ];
+    const date_js = '?' + new Date().getTime();
+    for (var i = 0; i < jsFiles.length; i++){
+    let js_el = document.createElement("script");
+    js_el.type = "text/javascript";
+    js_el.src = jsFiles[i] + date_js;
+    document.body.appendChild(js_el);
+    }
+
+    //imgタグキャッシュ
+window.addEventListener('DOMContentLoaded', function () {//HTML ドキュメントが完全に読み込まれ、解析されたときに発生
+  let file_tmp;
+  const date_param = new Date().getTime();//日時
+  const imgs = document.querySelectorAll("img");//ページ内のすべての img タグを取得
+  for(let i=0; i<imgs.length; i++) {//取得した画像要素に対してループ
+    if (imgs[i].getAttribute("data-src") !== null) {//data-src 属性が存在する場合のみ、後続の処理
+      if (imgs[i].getAttribute("data-src").indexOf('?') === -1) {//data-src 属性の値にクエリパラメータが含まれているかを確認
+        file_tmp = "?"+date_param;//含まれれていない場合
+      }else{
+        file_tmp = "&"+date_param;//含まれている場合
+      }
+      imgs[i].src = imgs[i].getAttribute("data-src")+file_tmp;//画像のソース（src 属性）を、元々の data-src 属性に取得したクエリパラメータを追加して更新します。
+    }
+  }
+});
+
+</script>
+</body>
+</html>

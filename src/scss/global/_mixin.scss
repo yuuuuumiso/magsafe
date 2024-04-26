@@ -1,0 +1,39 @@
+@use "sass:math"; //mathに必要
+
+//メディアクエリ
+$breakpoint: (
+  sp: "screen and (max-width: 767px)",
+  tab: "screen and (max-width: 1024px)",
+  pc: "screen and (min-width: 1025px)",
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+    @content;
+  }
+}
+
+// px+rem
+@mixin font-rem($size) {
+  font-size: $size + px;
+  font-size: ($size / 16) + rem;
+}
+
+//rem warning出るが無視でOK
+@function rem($px) {
+  @return ($px / 16) * 1rem;
+}
+
+/*
+ * htmlのfont-size用
+ */
+@function rootFz($baseWidth: 1200px) {
+  @return math.div(10px, $baseWidth) * 100vw;
+}
+/*
+ * font-size可変用
+ */
+@function calcFz($max) {
+  $value: math.div($max, 10);
+  @return clamp(10px, #{$value}rem, #{$max}px);
+}

@@ -1,0 +1,68 @@
+@use "../global/mixin" as *;
+@use "../global/variable" as *;
+
+html {
+line-height: 1.6;
+color: $color-font;
+font-family: "Zen Maru Gothic", serif, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;//「-apple-system(safari), BlinkMacSystemFont(chrome)」はフォント名ではない。macでOSシステムフォント(San Franciscoは単体で記述しても表示されない)を指定するための記述。この後にフォント名を書く必要がある
+letter-spacing: 0.1em;
+font-feature-settings:"palt"; //自動カーニング。「文字詰め」を有効
+text-spacing-trim:space-first;//句読点や括弧等の約物のスペース「アキ」を削る
+font-size: 62.5%;/*デフォルト10px*/
+-webkit-tap-highlight-color: transparent; /* リンクがタップされている間の強調をなくす */
+-webkit-font-smoothing: antialiased;// macOSでフォントを滑らかに
+-moz-osx-font-smoothing: grayscale;// macOSでフォントを滑らかに
+// line-break: strict;//句読点や記号を用いた場合の改行ルールを指定。strictは記号が先頭に来なくなる。日本語、中国語、韓国語など東洋の文字で機能します。
+// text-wrap: balance;//テキストが複数行のときに、行ごとの文字数を同じにしてバランスを自動調整
+// //word-break: auto-phrase;//英語対策：表示範囲の最後に来たとき、単語が長くても短くても、途中で改行させるかどうか指定する
+// overflow-wrap: break-word;//英語対策：表示範囲に収まらない長い単語を途中で改行させるかどうかを指定する（旧：word-wrap）
+// word-break: break-all;
+-webkit-text-size-adjust: 100%; //スマホ横向き対策
+min-width: 320px;
+tab-size: 4;//&#0009;使用時のスペース
+overflow-x: hidden;
+scroll-behavior: smooth;
+@include mq(sp) {
+  font-size:50%;
+}
+}
+@media (max-width: 768px) {
+  .is-pc {
+    display: none;
+  }
+  .is-sp {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .is-sp {
+    display: none !important;
+  }
+  .is-pc {
+    display: block !important;
+  }
+}
+
+:target {
+scroll-margin-top: 3rem;
+}
+::selection {
+background: #acacac;
+}
+img {
+max-width: 100%;
+height: auto;
+image-rendering: crisp-edges;
+display: block;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}

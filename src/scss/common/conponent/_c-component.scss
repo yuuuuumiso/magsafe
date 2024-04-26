@@ -1,0 +1,47 @@
+@use "../../global/variable" as *;
+@use "../../global/mixin" as *;
+
+.c-ttl01{
+    position: relative;
+    width: fit-content;
+    padding: 0rem 1rem;
+    border-bottom: 2px solid #a8a8a8;
+    background-color: #ffffff;
+    font-size: 3rem;
+    margin:0 auto 7rem;
+    text-align: center;
+    @include mq(sp) {
+        line-height: 1.2;
+        font-size:5.5vw;
+        padding: 1.5rem 1rem;
+        margin:0 auto 5rem;
+    }
+    span{
+        font-size: 1.5em;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 10%;
+        width: 15px;
+        height: 15px;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        rotate: 135deg;
+        translate: -27%;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        top: calc(100% + 5px);
+        left: calc(10% - 0px);
+        z-index: -1;
+        width: 30px;
+        height: 2px;
+        transform: rotate(50deg);
+        box-sizing: border-box;
+        background-color: #a8a8a8;
+        box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff; /* 背景色と同じ色を指定 */
+    }
+}

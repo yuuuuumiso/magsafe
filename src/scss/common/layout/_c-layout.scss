@@ -1,0 +1,15 @@
+@use "../../global/variable" as *;
+@use "../../global/mixin" as *;
+
+
+.c-sec{
+    padding-block: 50px;
+    &__inner{
+        max-width: 1200px;
+        margin-inline:auto;
+        padding-inline:30px;
+        @include mq(sp) {
+            padding-inline:15px;            
+        }
+    }
+}
