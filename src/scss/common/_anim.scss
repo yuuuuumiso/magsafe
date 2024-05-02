@@ -1,3 +1,13 @@
 /* -------------------------------------------------
 anime
 ---------------------------------------------------- */
+
+.scroll_up {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  .scroll_up.on {
+    transition:opacity 0.8s ease-in-out,transform 0.8s ease-in-out;
+    transform: translateY(0);
+    opacity: 1.0;
+  }

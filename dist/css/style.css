@@ -10,6 +10,22 @@
 anime
 ---------------------------------------------------- */
 
+.scroll_up {
+	-webkit-transform: translateY(30px);
+	transform: translateY(30px);
+	opacity: 0;
+}
+
+.scroll_up.on {
+	-webkit-transition: opacity 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+	transition: opacity 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+	transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+	transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	opacity: 1;
+}
+
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -450,7 +466,7 @@ html {
 }
 
 .reasonLists__item {
-	width: max(100%, 360px);
+	width: max(80%, 360px);
 }
 
 .reasonLists__ttl {

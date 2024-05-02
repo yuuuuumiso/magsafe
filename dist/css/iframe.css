@@ -1,0 +1,28 @@
+.inc-head {
+width: 100%;
+}
+.inc-head iframe {
+width: 100%;
+height: 380px;
+z-index: 9990;
+display: block;
+}
+.inc-head iframe.is-clicked {
+height: 100vh;
+}
+.slick-dots {
+display: none !important;
+}
+.l-footer {
+width: 100%;
+}
+.l-footer iframe {
+width: 100%;
+display: block;
+min-height: 890px;
+}
+@media screen and (max-width: 960px) {
+.inc-head iframe {
+height: 260px;
+}
+}

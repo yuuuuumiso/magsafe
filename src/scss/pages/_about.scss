@@ -20,7 +20,7 @@
         width: min(100%,360px);
         background: #f4f4f4;
         @include mq(sp) {
-            width: max(100%,360px);
+            width: max(80%,360px);
         }
     }
     &__ttl{

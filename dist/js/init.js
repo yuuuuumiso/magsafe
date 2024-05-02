@@ -1,5 +1,20 @@
 "use strict";
 
+//scroll_effect
+$(window).scroll(function () {
+  var scrollAnimationElm = document.querySelectorAll('.scroll_up');
+  var scrollAnimationFunc = function scrollAnimationFunc() {
+    for (var i = 0; i < scrollAnimationElm.length; i++) {
+      var triggerMargin = window.innerHeight * 0.2; // 画面の50%
+      if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+        scrollAnimationElm[i].classList.add('on');
+      }
+    }
+  };
+  window.addEventListener('load', scrollAnimationFunc);
+  window.addEventListener('scroll', scrollAnimationFunc);
+});
+
 //以下、iframe処理、ローカル環境だと楽天から読み込んだifraveにはjsもcssも効かない。本番はjsのみ効く。本番で確認する。cssを効かせたい場合はjsで操作する。
 //ローカルだとこの下に他のスクリプト書いても無効化されてしまう。
 //init.js:177 Uncaught DOMException: Failed to set a named property 'onload' on 'Window': Blocked a frame with origin "http://localhost:3000" from accessing a cross-origin frame. at http://localhost:3000/js/init.js?1700011187711:152:32
@@ -48,15 +63,3 @@ elmfooter.contentWindow.onresize = function () {
   }, 100);
 };
 //# sourceMappingURL=map/init.js.map
-
-
-
-$(document).ready(function() {
-  $('.tab').click(function() {
-    var tabId = $(this).data('tab');
-    $('.tab-content').removeClass('active');
-    $('#' + tabId).addClass('active');
-    $('.tab').removeClass('active');
-    $(this).addClass('active');
-  });
-});
