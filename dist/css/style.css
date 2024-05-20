@@ -343,6 +343,8 @@ a:active {
 	gap: 20px;
 }
 
+.c-itemLists img{width: 100%;}
+
 .p-mv {
 	background: #e1fffa;
 }
@@ -451,8 +453,7 @@ html {
 }
 
 .c-itemLists {
-	-ms-grid-columns: 1fr 1fr 1fr;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	gap: 10px;
 }
 
